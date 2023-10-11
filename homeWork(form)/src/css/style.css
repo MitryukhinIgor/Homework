@@ -1,0 +1,31 @@
+.but{ 
+    border: 2px solid #79818d;
+    height: 30px; 
+    margin: 14px;
+    background-color:white;
+    border-radius: 5px;
+    font-size: 10 px;
+    padding: 0px 3px;
+    text-align: center;
+    
+}
+.form-example{
+    border: 1px solid #111;
+    border-radius: 20px;
+    height: 60px;
+    background-color: white;
+    padding-left: 150px;
+   
+   
+   
+}
+.form{
+    border:2px solid blue;
+    height: 100%;
+    padding:200px 400px;
+    background-color: #d0c2cf;
+    
+}
+.centerbut{
+    padding-left:170px;
+}
