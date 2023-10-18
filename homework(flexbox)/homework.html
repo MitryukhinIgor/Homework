@@ -1,156 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  
-   <head>
-   
-        <meta charset="utf-8">
-        <link rel = "stylesheet" href="src/css/style.css">
-        <link rel = "stylesheet" href="src/css/reset.css">
-        <link rel = "stylesheet" href="src/css/bootstrap.css">
-        <script src="https://kit.fontawesome.com/1bcd71f64a.js" crossorigin="anonymous"></script>
-    </head>
-    
-    
-    <body>
-   
-       
-        
-          <header>
-            <div class="headermain">
-                <div class="firstpart">
-                 <div class="logo"><img src="src/img/logo.png"></div>
-                    <div class="menu">
-                     <ul class="wrap">
-                         <li><a href="1">Refereces</a></li>
-                         <li><a href="2">Guides</a></li>
-                         <li><a href="3">Plus</a></li>
-                         <li><a href="4">Blog</a></li>
-                         <li><a href="5">Play</a></li>
-                         <li><a href="6">Al Help</a></li>
-                     </ul>
-                  </div>
-              </div>
-             <div class="secondpart">
-                
-                 <div class="theme">
-                 <button class="but"><i class="fa-solid fa-moon"></i> Theme</button> </div>
-               <div class="search">
-               <button class="but"><img src="src/img/trait.png"><i class="fa-solid fa-magnifying-glass"></i></button></div>
-               <div class="login"><button class="but">Log in</button></div>
-               <div class="signup"><button class="but">Sign up for free</button></div>
-            
-             </div>
-           </div>
-           
-            </header>
-            
-            <div class="main">
-                <div class="cont">
-                   <div class="navigation">
-                    <a href="1"><span>Guides ></span></a>
-                    <a href="2"><span>Common questions ></span></a>
-                    <a href="3"><span>Tools and setup ></span></a>
-                    <a href="4"><span>What are browser developer tools?</span></a>                          
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/1bcd71f64a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="headermain"> <!--Этот класс можно применить к header, в лишнем div'e нет смысла особо-->
+        <div class="firstpart"> <!-- firstpart, secondpart и тп плохие названия. Название должно отражать суть (что из себя представляет блок)-->
+            <div class="logo"><img src="src/img/logo.png"></div>  <!-- Вот тут название хорошее-->
+            <div class="menu">
+                <ul class="wrap"> <!--Опять же, можно обойтись без лишней вложенности (div строкой выше)-->
+                    <li><a href="1">Refereces</a></li> <!-- Если ссылка никуда не ведет и является "заглушкой" то обычно используют # в href-->
+                    <li><a href="2">Guides</a></li>
+                    <li><a href="3">Plus</a></li>
+                    <li><a href="4">Blog</a></li>
+                    <li><a href="5">Play</a></li>
+                    <li><a href="6">Al Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="secondpart">
+
+            <div class="theme"> <!-- theme-switcher или theme-button или theme-switch-button. И снова, в лишнем div'e нет смысла. Все стили можно применить напрямую кнопке -->
+                <button class="but"><i class="fa-solid fa-moon"></i> Theme</button> <!-- But очень плохое название. Если хочешь сократить, то лучше, например btn (но лучше писать целиком button).
+                У button есть аттрибут type. Его всегда стоит указывать явно. В данном случае type="button" -->
+            </div>
+            <div class="search">
+                <button class="but"><img src="src/img/trait.png"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="login">
+                <button class="but">Log in</button>
+            </div>
+            <div class="signup">
+                <button class="but">Sign up for free</button>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+<div class="main">
+    <div class="cont">
+        <div class="navigation">
+            <a href="1"><span>Guides ></span></a>
+            <a href="2"><span>Common questions ></span></a>
+            <a href="3"><span>Tools and setup ></span></a>
+            <a href="4"><span>What are browser developer tools?</span></a>
+        </div>
+        <div class="lang">
+            <i class="fa-sharp fa-solid fa-globe"></i>
+            <select id="language" name="language" required>
+                <option>English (US)</option>
+                <option>Español</option>
+                <option>Français</option>
+                <option>日本語</option>
+                <option>Русский</option>
+
+            </select>
+        </div>
+    </div>
+    <div class="pages">
+        <div class="leftpage"> <!--Это сайдбар-->
+            <div class="filter">
+                <i class="fa-solid fa-filter fa-xs"></i>
+                <input placeholder="Filter">
+            </div>
+            <div class="text1">
+
+                <p><span>Design and accessibility</span></p>
+                <p><span>Design and accessibility</span></p>
+                <p><span>What do common web layouts contain?</span></p>
+                <p><span>How can we design for all types of users?</span></p>
+                <p><span>What HTML features promote accessibility?</span></p>
+                <p><span>How do I start to design my website?</span></p>
+                <p><span>What is accessibility?</span></p>
+            </div>
+
+        </div>
+
+        <div class="centerpage">
+            <h1>What are browser developer tools?</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eaque esse rerum at. Sapiente rem aliquid
+            corporis, tempora iste. Magnam odio odit veritatis ea nobis quae labore obcaecati tempora architecto.
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vero voluptate ab sapiente officia totam.
+            Aliquid, obcaecati facilis quibusdam eligendi voluptatum rerum eius, veritatis, temporibus reiciendis
+            dolorem commodi beatae modi quisquam asperiores rem doloremque quo. Totam aliquam expedita, illum ad error
+            commodi reprehenderit ratione, dicta. Sunt aspernatur provident dignissimos quae quis similique assumenda
+            eius tenetur commodi deserunt rem ipsum, quas, quod dicta repellendus sed dolorum quaerat natus earum
+            obcaecati deleniti.
+            <div class="info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio praesentium sapiente
+                dolorum at fugiat numquam mollitia illo velit laboriosam?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio praesentium sapiente
+                dolorum at fugiat numquam mollitia illo velit laboriosam?
+            </div>
+            <h1>How to open the devtools in your browser</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aliquam consequuntur placeat nobis itaque,
+            harum optio maxime? Nostrum rerum hic neque, ipsam doloribus rem omnis! Culpa doloremque, reiciendis porro!
+            Illum porro nemo debitis, quisquam odit magni esse error voluptate, quaerat labore assumenda eaque nesciunt
+            temporibus nisi suscipit vitae, dicta accusamus fugit ipsum ducimus id! Tenetur beatae vero voluptatem eaque
+            fuga cum, quos totam! Reiciendis aliquam temporibus velit voluptas atque accusantium dolores itaque quam
+            optio, at totam modi molestias sequi sunt minima nostrum inventore ipsa sit corrupti perferendis. Facilis
+            veritatis ratione perferendis commodi voluptates nostrum id cum eius aspernatur, eveniet dolore consequuntur
+            ipsum doloribus repellendus tempora, ullam animi. Iusto debitis, laudantium harum, nemo atque, enim beatae
+            sapiente quaerat amet id autem.
+        </div>
+        <div class="rightpage">
+            <div class="rightscroll">
+                <h4>In this article</h4>
+                <div class="text2">
+
+                    <p><span>How to open the devtools in your browser</span></p>
+                    <p><span>The Inspector: DOM explorer and CSS editor</span></p>
+                    <p><span>The JavaScript debugger</span></p>
+                    <p><span>The JavaScript console</span></p>
+                    <p><span>See also</span></p>
+
                 </div>
-                <div class="lang">
-              <i class="fa-sharp fa-solid fa-globe"></i>
-                     <select id="language" name="language" required>
-                            <option>English (US)</option>
-                            <option>Español</option>
-                            <option>Français</option>
-                            <option>日本語</option>
-                            <option>Русский</option>
-                            
-                        </select>
-                    </div>
-                </div>
-                <div class="pages">
-                    <div class="leftpage"> 
-                       <div class="filter">
-                             <i class="fa-solid fa-filter fa-xs"></i>
-                             <input placeholder="Filter">
-                              </div>
-                              <div class="text1">
-    
-                                 <p><span>Design and accessibility</span></p>
-                                  <p><span>Design and accessibility</span></p>
-                                   <p><span>What do common web layouts contain?</span></p>
-                                    <p><span>How can we design for all types of users?</span></p>
-                                     <p><span>What HTML features promote accessibility?</span></p>
-                                      <p><span>How do I start to design my website?</span></p>
-                                       <p><span>What is accessibility?</span></p>
-                             </div>
-                       
-                    </div>
-                    
-                    <div class="centerpage">
-                       <h1>What are browser developer tools?</h1> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eaque esse rerum at. Sapiente rem aliquid corporis, tempora iste. Magnam odio odit veritatis ea nobis quae labore obcaecati tempora architecto.
-                        
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vero voluptate ab sapiente officia totam. Aliquid, obcaecati facilis quibusdam eligendi voluptatum rerum eius, veritatis, temporibus reiciendis dolorem commodi beatae modi quisquam asperiores rem doloremque quo. Totam aliquam expedita, illum ad error commodi reprehenderit ratione, dicta. Sunt aspernatur provident dignissimos quae quis similique assumenda eius tenetur commodi deserunt rem ipsum, quas, quod dicta repellendus sed dolorum quaerat natus earum obcaecati deleniti.
-                        <div class="info">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio praesentium sapiente dolorum at fugiat numquam mollitia illo velit laboriosam?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio praesentium sapiente dolorum at fugiat numquam mollitia illo velit laboriosam?
-                        </div>
-                        <h1>How to open the devtools in your browser</h1>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aliquam consequuntur placeat nobis itaque, harum optio maxime? Nostrum rerum hic neque, ipsam doloribus rem omnis! Culpa doloremque, reiciendis porro! Illum porro nemo debitis, quisquam odit magni esse error voluptate, quaerat labore assumenda eaque nesciunt temporibus nisi suscipit vitae, dicta accusamus fugit ipsum ducimus id! Tenetur beatae vero voluptatem eaque fuga cum, quos totam! Reiciendis aliquam temporibus velit voluptas atque accusantium dolores itaque quam optio, at totam modi molestias sequi sunt minima nostrum inventore ipsa sit corrupti perferendis. Facilis veritatis ratione perferendis commodi voluptates nostrum id cum eius aspernatur, eveniet dolore consequuntur ipsum doloribus repellendus tempora, ullam animi. Iusto debitis, laudantium harum, nemo atque, enim beatae sapiente quaerat amet id autem.
-                    </div>
-                        <div class="rightpage">
-                            <div class="rightscroll">
-                             <h4>In this article</h4>
-                            <div class="text2">
-    
-                                 <p><span>How to open the devtools in your browser</span></p>
-                                  <p><span>The Inspector: DOM explorer and CSS editor</span></p>
-                                   <p><span>The JavaScript debugger</span></p>
-                                    <p><span>The JavaScript console</span></p>
-                                     <p><span>See also</span></p>
-                                     
-                                         </div>
-                                        
-                             <div class="overflow"></div>
-                              
-                                  </div> 
-                        </div>
-                </div>
-                <div class="conteinercontacts">
-                <div class="contact">
-                    <div class="icons"><h3>mdn</h3> <p><span>Your blueprint for a better internet.</span></p>
-                    <i class="fa-brands fa-telegram"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-solid fa-wifi"></i>
-                    </div>
-                    <div class="mdn">
-                    <span>hello</span>
-                     <span>hello</span>
-                      <span>hello</span>
-                       <span>hello</span>
-                    </div>
-                    <div class="support">
-                         <span>hello</span>
-                          <span>hello</span>
-                           <span>hello</span>
-                            <span>hello</span>
-                    </div>
-                    <div class="ourcommunities">
-                         <span>hello</span>
-                          <span>hello</span>
-                           <span>hello</span>
-                            <span>hello</span>
-                    </div>
-                    <div class="developers">
-                         <span>hello</span>
-                          <span>hello</span>
-                           <span>hello</span>
-                            <span>hello</span>
-                    </div>
-                </div>
-              </div>
-                </div>
-   
-    </body>
-     
+
+                <div class="overflow"></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="conteinercontacts">
+        <div class="contact">
+            <div class="icons"><h3>mdn</h3>
+                <p><span>Your blueprint for a better internet.</span></p>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="mdn">
+                <span>hello</span>
+                <span>hello</span>
+                <span>hello</span>
+                <span>hello</span>
+            </div>
+            <div class="support">
+                <span>hello</span>
+                <span>hello</span>
+                <span>hello</span>
+                <span>hello</span>
+            </div>
+            <div class="ourcommunities">
+                <span>hello</span>
+                <span>hello</span>
+                <span>hello</span>
+                <span>hello</span>
+            </div>
+            <div class="developers">
+                <span>hello</span>
+                <span>hello</span>
+                <span>hello</span>
+                <span>hello</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
 
 
