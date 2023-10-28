@@ -1,13 +1,13 @@
-.menu a{
+.link{
     color:#CDCDCD;
+}
+.color_btn{
     padding: 8px;
-    
 }
-.menu a:hover{
-    color:#ae8aff;
+.color_btn:hover{
+    color:#ae8aff; 
 }
-.headermain{
-    height: 64px;
+.header{
     padding: 0px 32px;
     background-color: #1b1b1b;
     display:flex;
@@ -17,25 +17,20 @@
 
 .wrap{
     display:flex;
-     
+    padding-top:16px;
 }
-.firstpart{
+.header-navigation{
   display:flex;
     align-items: center;
 }
-.secondpart{
+.header-global-bar{
     display: flex;
-   
 }
-.but{
-     height: 32px;
-    width: 120px;
-    
+.button_size{
+    height: 32px;
+    width: 120px;     
 }
-.menu{
-    padding-top:16px;
-}
-.search img{
+.search_img{
     padding: 14px 14px 0px 0px;
 }
 .signup{
@@ -43,7 +38,6 @@
     background-color: white;
     font-size: 14px;
     border-radius: 5px;
-    
 }
 .theme,.search,.login{
     color:#CDCDCD;
@@ -53,20 +47,16 @@
     border-radius: 40px;
 }
 .cont{
-    height: 28px;
-    width: 100%;
     background-color: #4e4e4e;
-    padding: 0px 32px;
+    padding: 3px 32px;
     color:#CDCDCD;
     display: flex;
     justify-content: space-between;
     border-top:1px solid #CDCDCD;
     border-bottom:1px solid #CDCDCD;
 }
-.cont a{
-     color:#CDCDCD;
-}
-.cont a:hover{
+
+.underline:hover{
     text-decoration: underline;
 }
 .pages{
@@ -74,106 +64,130 @@
     padding: 0px 32px;
     display: flex;
 }
-.leftpage{
-    width: 20%;
+.sidebar{
+   
     display: flex;
     flex-direction: column;
-     overflow-y: scroll;
-  
-    
+}
+
+.centerpage_width{
+     width: 60%;
    
 }
-.leftpage i{
-    padding: 8px;
-}
-.centerpage{
-     width: 60%;
+.rightpage_width{
+    width: 20%;
 }
 .rightpage{
-    display:flex;
-    width: 20%;
-    overflow-y: scroll;
-   
-   
+     display:flex;
 }
-.filter{
-    width: 30%;
-    border:1px solid  #CDCDCD;
-    display: flex;
-    color:  #CDCDCD; 
-    align-items:center;
-    border-radius: 40px; 
-    margin-top:10px;
-    height: 32px;
-}
-.filter input{
-    width: 45px;
-}
-.text2{
+
+.text_secondaty{
     padding: 8px 16px;
     color:#CDCDCD;
     border-left: 1px solid #CDCDCD; 
 }
-.rightpage h4{
+.caption{
     color:#FFFFFF;
     padding-top:48px;
 }
-.overflow {
-  min-height: 500px;
-}
 
-.text2 span:hover{
+.text_secondaty span:hover{
     color:#8cb4ff;
 }
-.text1{
+.text_primary{
     padding: 8px;
     color:#CDCDCD;
+    box-shadow:50px black; /*box-shadow: 10px black;   почему не применяется */
 }
-.text1 span:hover{
+.text_primary span:hover{
      text-decoration: underline;
 }
 .centerpage{
     color:white;
-    padding: 50px 30px;
+    padding: 0px 30px;
 }
 .info{
     border: 1px solid #CDCDCD;
     border-left: 3px solid #5e9eff;
-    margin: 35px 0px;
     padding: 25px;
     background-color:rgba(0,133,242,.1);
     border-radius: 5px;
     color:#CDCDCD;
 }
-.contact{
-    height:300px;
-    width: 90%;
-    display: flex;
+.footer{
+    padding: 32px 16px;
+    background-color: #343434;
     color:#CDCDCD;
-    border-bottom: 1px solid #CDCDCD;
-    padding: 30px 0px;
-    margin-left:5%;
-    justify-content: space-around;
-    
-    
 }
-.mdn,.support,.ourcommunities,.developers{
+.page-footer-moz{
+    border-top:1px solid #CDCDCD;
+    padding: 24px 0px 0px 0px;
     display: flex;
-    flex-direction: column;
+    align-items:center;
+   
+}
+.page-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size:16px;
 }
 
-.conteinercontacts{
-    width: 100%;
-    height: 500px;
-     background-color: #4e4e4e;
+.footer-icons{
+    color:#FFFFFF;
+    padding:8px;
 }
-.contact span{
+.text{
+    padding: 35px 0px;
+}
+.filter-conteiner{
     padding: 8px;
 }
-
-
-
-
+.filter{
+    color:#CDCDCD;
+    border: 1px solid #CDCDCD;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 2px 0px;               
+}
+.filter-width{
+     width: 5rem; 
+}
+.fa-filter{
+    padding: 8px;
+}
+.footer-moz-list{
+    display: flex;
+    margin: inherit;                      /* почему появляется автоматический margin*/
+    text-decoration:underline;  
+}
+.title_h2{
+    font-size:16px;
+}
+.link-moz-pading{
+    padding-left: 20px;
+   
+}
+.page-footer-legal-text{
+    padding-top:20px;
+}
+.link-moz:hover{
+    text-decoration: underline;
+    text-decoration-color:#343434 ;
+}
+/*.link-footer-text{
+    text-decoration: underline;           почему не работает отдельно по классу ссылки?...
+}*/
+.sidebar{
+    max-height:850px;
+    overflow: auto;
+   
+}
+.rightpage{
+    max-height:700px;
+    overflow: auto;                   /*как изменить цвет скролла?*/
+}
 
 
 
