@@ -1,199 +1,205 @@
-.link{
-    color:#CDCDCD;
+:root {
+    --row-gap: 1rem
 }
-.color_btn{
+
+.wrapper {
+    color: #CDCDCD;
+    font-size: 16px;
+    background-color: #1b1b1b;
+}
+
+.wrapper__header {
+    height: 64px;
+}
+
+
+.wrapper__breadcrumbs {
+    height: 32px;
+}
+
+.link {
+    color: #CDCDCD;
+    text-decoration: none;
+}
+
+.link--underlined:hover {
+    text-decoration: underline;
+}
+
+.header-nav__item {
     padding: 8px;
 }
-.color_btn:hover{
-    color:#ae8aff; 
+
+.header-nav__item:hover {
+    color: #ae8aff;
 }
-.header{
-    padding: 0px 32px;
-    background-color: #1b1b1b;
-    display:flex;
-    align-items:center;
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__container {
+    margin: 0 auto;
+    display: flex;
     justify-content: space-between;
 }
 
-.wrap{
-    display:flex;
-    padding-top:16px;
-}
-.header-navigation{
-  display:flex;
-    align-items: center;
-}
-.header-global-bar{
-    display: flex;
-}
-.button_size{
-    height: 32px;
-    width: 120px;     
-}
-.search_img{
-    padding: 14px 14px 0px 0px;
-}
-.signup{
-    color:#1b1b1b ;
+.signup-btn {
+    color: #1b1b1b;
     background-color: white;
     font-size: 14px;
     border-radius: 5px;
 }
-.theme,.search,.login{
-    color:#CDCDCD;
-}
-.search{
-    border:1px solid #CDCDCD;
+
+.search {
+    border: 1px solid #CDCDCD;
     border-radius: 40px;
 }
-.cont{
+
+.breadcrumbs {
     background-color: #4e4e4e;
-    padding: 3px 32px;
-    color:#CDCDCD;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.breadcrumbs__container {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    border-top:1px solid #CDCDCD;
-    border-bottom:1px solid #CDCDCD;
 }
 
-.underline:hover{
-    text-decoration: underline;
-}
-.pages{
-    background-color:#1b1b1b;
-    padding: 0px 32px;
-    display: flex;
-}
-.sidebar{
-   
-    display: flex;
-    flex-direction: column;
+.section-navigation__section-title {
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 700;
 }
 
-.centerpage_width{
-     width: 60%;
-   
-}
-.rightpage_width{
-    width: 20%;
-}
-.rightpage{
-     display:flex;
+.section-navigation__item {
+    font-size: 0.8rem;
 }
 
-.text_secondaty{
+.sidebar__filter {
+    width: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+.text_secondaty {
     padding: 8px 16px;
-    color:#CDCDCD;
-    border-left: 1px solid #CDCDCD; 
-}
-.caption{
-    color:#FFFFFF;
-    padding-top:48px;
+    border-left: 1px solid #CDCDCD;
 }
 
-.text_secondaty span:hover{
-    color:#8cb4ff;
+.caption {
+    color: #FFFFFF;
+    padding-top: 48px;
 }
-.text_primary{
-    padding: 8px;
-    color:#CDCDCD;
-    box-shadow:50px black; /*box-shadow: 10px black;   почему не применяется */
+
+.main-content {
+    color: white;
 }
-.text_primary span:hover{
-     text-decoration: underline;
-}
-.centerpage{
-    color:white;
-    padding: 0px 30px;
-}
-.info{
+
+.info {
     border: 1px solid #CDCDCD;
     border-left: 3px solid #5e9eff;
     padding: 25px;
-    background-color:rgba(0,133,242,.1);
+    background-color: rgba(0, 133, 242, .1);
     border-radius: 5px;
-    color:#CDCDCD;
-}
-.footer{
-    padding: 32px 16px;
-    background-color: #343434;
-    color:#CDCDCD;
-}
-.page-footer-moz{
-    border-top:1px solid #CDCDCD;
-    padding: 24px 0px 0px 0px;
-    display: flex;
-    align-items:center;
-   
-}
-.page-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size:16px;
 }
 
-.footer-icons{
-    color:#FFFFFF;
-    padding:8px;
+.footer {
+    padding: 32px 16px;
+    background-color: #343434;
 }
-.text{
-    padding: 35px 0px;
+
+.footer__container {
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
 }
-.filter-conteiner{
-    padding: 8px;
+
+.footer__legal-links {
+    border-top: 1px solid #CDCDCD;
+    padding-top: 24px;
 }
-.filter{
-    color:#CDCDCD;
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__about-us {
+    display: grid;
+    gap: 1rem;
+}
+
+.footer-icons {
+    color: #FFFFFF;
+}
+
+.main-content__title {
+    font-size: 2rem;
+}
+
+.filter {
     border: 1px solid #CDCDCD;
     border-radius: 30px;
     display: flex;
     align-items: center;
-    padding: 2px 0px;               
 }
-.filter-width{
-     width: 5rem; 
+
+.filter__input {
+    width: 100%;
 }
-.fa-filter{
+
+.filter__icon {
     padding: 8px;
 }
-.footer-moz-list{
+
+.footer-moz-list {
     display: flex;
-    margin: inherit;                      /* почему появляется автоматический margin*/
-    text-decoration:underline;  
 }
-.title_h2{
-    font-size:16px;
+
+.title_h2 {
+    font-size: 16px;
 }
-.link-moz-pading{
+
+.link-moz-pading {
     padding-left: 20px;
-   
+
 }
-.page-footer-legal-text{
-    padding-top:20px;
-}
-.link-moz:hover{
+
+.link-moz:hover {
     text-decoration: underline;
-    text-decoration-color:#343434 ;
-}
-/*.link-footer-text{
-    text-decoration: underline;           почему не работает отдельно по классу ссылки?...
-}*/
-.sidebar{
-    max-height:850px;
-    overflow: auto;
-   
-}
-.rightpage{
-    max-height:700px;
-    overflow: auto;                   /*как изменить цвет скролла?*/
+    text-decoration-color: #343434;
 }
 
+.container {
+    max-width: 1440px;
+    width: 100%;
+}
 
+.row {
+    display: flex;
+    gap: var(--row-gap);
+}
 
+.row--centered-x {
+    justify-content: center;
+}
 
+.row--centered-y {
+    align-items: center;
+}
 
-
+.main__container {
+    margin: 0 auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr) minmax(0, 15rem);
+}
 
 
 
