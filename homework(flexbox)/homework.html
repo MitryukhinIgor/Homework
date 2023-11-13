@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/reset.css"> <!-- Стили должны сбрасывваться перед подключением остальных стилей-->
     <script src="https://kit.fontawesome.com/1bcd71f64a.js" crossorigin="anonymous"></script>
     <title>MDN</title>
 </head>
@@ -50,7 +50,8 @@
     <div class="wrapper__breadcrumbs breadcrumbs">
        <div class="container breadcrumbs-container">
             <div class="row">
-                <ul class="breadcrumbList">
+                <ul class="breadcrumbList"> <!-- Не забывай. css классы пишутся в kebab-case нотации-->
+                    <!-- Элементы отделяются от блоков двойным "_", а не одним. Если это подразумевался как модиифкатор, но название плохое  -->
                     <li class="breadcrumbList_li"><a href="#" class="link link--underlined"><span>Guides ></span></a></li>
                     <li class="breadcrumbList_li" ><a href="#" class="link link--underlined"><span>Common questions ></span></a></li>
                     <li class="breadcrumbList_li"><a href="#" class="link link--underlined"><span>Tools and setup ></span></a></li>
@@ -68,7 +69,7 @@
                     <option>Русский</option>
                 </select>
             </div>
-            <div class="language_min_icon">
+            <div class="language_min_icon"> <!-- Стоит придерживаться выбора в нейминге модификаторов (либо "--" либо "_")-->
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </div>
         </div>
